@@ -1,0 +1,577 @@
+/* fonts  */
+
+@font-face {
+    font-family: "Franklin-Gothic-Condensed";
+    src: url("Franklin\ Gothic\ Condensed.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Arpona-Black-Italic";
+    src: url("Fontspring-arpona-blackitalic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Franklin-Gothic-Book-Regular";
+    src: url("Franklin\ Gothic\ Book\ Regular.ttf")
+}
+
+/* Global styles  */
+
+*,
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    max-width: 100%;
+    font-size: max(0.2px, calc(100vw / 1920));
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.arpona-red {
+    font-family: 'Arpona-Black-Italic';
+    color: rgba(206, 19, 41, 1);
+}
+
+.franklin {
+    font-family: 'Franklin-Gothic-Book-Regular';
+}
+
+button {
+    font-family: 'Franklin-Gothic-Condensed';
+    font-size: 16rem;
+    border-radius: 25rem;
+    border: 0;
+    cursor: pointer;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Header  */
+
+header {
+    background-color: black;
+    color: white;
+    font-family: 'Franklin-Gothic-Condensed';
+    padding: 0 10rem;
+    justify-content: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header .container {
+    width: 1300rem;
+}
+
+header .upper {
+    padding: 15rem 0;
+    flex-wrap: wrap;
+    row-gap: 30rem;
+}
+
+header .upper .left a {
+    font-size: 16rem;
+}
+
+header .upper .right {
+    gap: 44rem;
+    flex-wrap: wrap;
+    row-gap: 5rem;
+    margin-left: auto;
+}
+
+header .upper a {
+    display: flex;
+    align-items: center;
+    line-height: 20rem;
+    gap: 8rem;
+}
+
+header .upper .right a span {
+    font-size: 14rem;
+}
+
+header .upper a:hover {
+    color: #FFC72C;
+}
+
+header .lower a:hover {
+    text-decoration: underline #FFC72C 2rem;
+}
+
+header .lower button {
+    background-color: #FFC72C;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 11rem 22rem;
+}
+
+header .lower button .order-icon-light {
+    display: none;
+}
+
+header .lower button:hover {
+    color: white;
+    background-color: rgba(206, 19, 41, 1);
+}
+
+header .lower button:hover .order-icon-dark {
+    display: none;
+}
+
+header .lower button:hover .order-icon-light {
+    display: inline-block;
+}
+
+header .lower {
+    padding-top: 27rem;
+    padding-bottom: 20rem;
+    flex-wrap: wrap;
+    row-gap: 20rem;
+}
+
+header .lower .left {
+    gap: 78rem;
+    font-size: 18rem;
+    flex-wrap: wrap;
+    row-gap: 10rem;
+}
+
+header .lower .left .logo img {
+    width: 168rem;
+    max-width: 168rem;
+}
+
+header .lower .left nav {
+    gap: 40rem;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+header .lower .right {
+    margin-left: auto;
+}
+
+/* Wrap section */
+
+section.wraps {
+    max-width: 1300rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20rem;
+    margin-top: 5rem;
+    padding: 0 10rem;
+}
+
+section.wraps .img-container {
+    height: 390rem;
+}
+
+section.wraps p {
+    text-align: center;
+}
+
+section.wraps p:first-child {
+    line-height: 33rem;
+}
+
+section.wraps p:nth-of-type(2) {
+    font-size: 28rem;
+}
+
+section.wraps button {
+    color: white;
+    background-color: black;
+    width: 132.60rem;
+    height: 49rem;
+}
+
+section.wraps button span:last-child {
+    display: none;
+}
+
+section.wraps button:hover span:first-child {
+    display: none;
+}
+
+section.wraps button:hover span:last-child {
+    display: inline-block;
+}
+
+section.wraps button:hover {
+    background-color: white;
+}
+
+/* Snack Section */
+
+section.snack {
+    max-width: 1300rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 45rem;
+    row-gap: 30rem;
+    padding: 0 10rem;
+    margin: 110rem auto 59rem auto;
+    /* text-align: center; */
+}
+
+section.snack .left {
+    flex-basis: 550rem;
+    margin: auto;
+    flex-direction: column;
+    gap: 30rem;
+    justify-content: center;
+}  
+
+section.snack .left p:first-of-type {
+    font-size: 24rem;
+}
+
+section.snack .left p:last-of-type {
+    font-size: 16rem;
+    line-height: 27rem;
+}
+
+section.snack .left button {
+    background-color: black;
+    color: white;
+    padding: 12rem 20rem;
+    width: 119.86rem;
+}
+
+section.snack .right {
+    flex-basis: 650rem;
+}
+
+/* Featured Menu */
+
+section.featured-menu {
+    background-image: url('../images/bg3.png');
+    background-size: cover;
+    height: 253rem;
+    padding: 60rem 10rem;
+    justify-content: center;
+}
+
+section.featured-menu .container {
+    width: 1300rem;
+}
+
+section.featured-menu p{
+    font-family: 'Arpona-Black-Italic';
+    color: white;
+    font-size: 30rem;
+}
+
+section.featured-menu button {
+    width: 157rem;
+    height: 48rem;
+    background-color: #FFC72C;
+}
+
+/* Free Sandwich */
+
+section.free-sandwich {
+    max-width: 1300rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 110rem auto 0;
+    gap: 50rem;
+}
+
+section.free-sandwich .left {
+    flex-basis: 550rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30rem;
+    padding:0 40rem;
+}  
+
+section.free-sandwich p:first-of-type {
+    font-family: 'Arpona-Black-Italic';
+    font-size: 40rem;
+    line-height: 35rem;
+}
+
+section.free-sandwich p:last-of-type {
+    line-height: 27rem;
+    font-size: 14rem;
+}
+
+section.free-sandwich .left button {
+    background-color: black;
+    color: white;
+    padding: 12rem 20rem;
+    width: 104.86rem;
+}
+
+section.free-sandwich .right {
+    flex-basis: 650rem;
+}
+
+section.free-sandwich .right img {
+    height: auto;
+}
+
+/* Latest Cravings */
+
+section.cravings {
+    max-width: 1300rem;
+    flex-direction: column;
+    margin: 80rem auto 42rem;
+}
+
+section.cravings .upper {
+    align-items: center;
+    padding-bottom: 42rem;
+    gap: 10rem;
+}
+
+section.cravings .upper .img-container {
+    width: 358rem;
+    height: 70rem;
+}
+
+section.cravings .lower {
+    padding: 0 21rem;
+    gap: 20rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.cravings .upper .center p {
+    font-family: 'Arpona-Black-Italic';
+    font-size: 32rem;
+    text-align: center;
+    line-height: 28rem;
+}
+
+section.cravings .lower .box {
+    flex-direction: column;
+    background-color: black;
+    border-radius: 25rem;
+    flex-basis: 406rem;
+}
+
+section.cravings .lower .box .img-container {
+    height: 232rem;
+}
+
+section.cravings .lower .box .box-body {
+    padding: 30rem 30rem 101rem;
+    flex-direction: column;
+    gap: 20rem;
+}
+
+section.cravings .lower .box p {
+    color: white;
+}
+
+section.cravings .lower .box p:first-of-type {
+    font-family: 'Franklin-Gothic-Condensed';
+    font-size: 32rem;
+}
+
+section.cravings .lower .box p:last-of-type {
+    font-family: 'Franklin-Gothic-Book-Regular';
+    font-size: 14rem;
+}
+
+section.cravings .lower .box button{
+    width: 125rem;
+    height: 46rem;
+    margin-top: 10rem;
+    background-color: #FFC72C;
+}
+
+section.cravings .lower .box button:hover {
+    color: white;
+    background-color: rgba(206, 19, 41, 1);
+}
+
+/* Social media section */
+
+section.socials {
+    margin: 100rem auto;
+    padding: 0 10rem;
+    justify-content: center;
+}
+
+section.socials .container {
+    width: 1300rem;
+    flex-wrap: wrap;
+    gap: 80rem;
+    margin: auto;
+}
+
+section.socials .container > div {
+    flex-basis: 608rem;
+}
+
+section.socials p {
+    font-family: 'Arpona-Black-Italic';
+    font-size: 32rem;
+    padding-bottom: 32rem;
+
+}
+
+section.socials .video-container {
+    aspect-ratio: 1.77 / 1;
+}
+
+section.socials .images-container {
+    flex-wrap: wrap;
+}
+
+section.socials .img-container {
+    flex: 1 1 178rem;
+    aspect-ratio: 1 / 1;
+    padding: 0 7rem 14rem;
+}
+
+/* App Section */
+
+section.app {
+    justify-content: center;
+    background-color: #FFC72C;
+    min-height: 210rem;
+    column-gap: 132rem;
+    flex-wrap: wrap;
+    padding: 0 10rem;
+}
+
+section.app .left.img-container {
+    width: 135rem;
+    height: 162rem;
+    align-self: flex-end;
+}
+
+section.app .right {
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: center;
+    gap: 20rem;
+    padding-bottom: 50rem;
+}
+
+section.app .right p {
+    font-size: 30rem;
+    font-family: "Arpona-Black-Italic";
+    text-align: center;
+    line-height: 30rem;
+}
+
+section.app .right p span {
+    color: rgba(206, 19, 41, 1);
+}
+
+section.app .right .lower {
+    gap: 4rem;
+}
+
+section.app .right .lower .img-container {
+    height: 40rem;
+}
+
+/* texture section */
+
+section.texture {
+
+}
+
+section.texture .lines-bakground {
+    width: 85vw;
+    height: 4.4vw;
+    min-height: 36rem;
+    background-image: url('../images/line-ft.png');
+    background-repeat: repeat-x;
+    background-size: 100% 100%;
+}
+
+section.texture .img-container {
+    height: 7.14vw;
+    min-height: 60rem;
+    margin-left: min(-4.4%, -35rem);
+}
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 42rem 10rem 36rem;
+    margin-top: min(-2vw, -19.03rem);
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .container {
+    column-gap: 156rem;
+    row-gap: 60rem;
+    flex-wrap: wrap;
+}
+
+footer .left .img-container {
+    width: 190rem;
+}
+
+footer .right {
+    flex-direction: column;
+}
+
+footer .right .a {
+    font-family: 'Franklin-Gothic-Condensed';
+    font-size: 16rem;
+    column-gap: 20rem;
+    row-gap: 40rem;
+    flex-wrap: wrap;
+}
+
+footer .right .b {
+    font-size: 24rem;
+    gap: 21rem;
+    margin: 50rem 0 60rem;
+}
+
+footer .right .c {
+    font-size: 14rem;
+    font-family: 'Franklin-Gothic-Book-Regular';
+    column-gap: 30rem;
+    row-gap: 5rem;
+    flex-wrap: wrap;
+}
+
+footer .right .d {
+    font-size: 12rem;
+    font-family: 'Franklin-Gothic-Book-Regular';
+    margin-top: 20rem;
+}
